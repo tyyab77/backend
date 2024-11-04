@@ -1,8 +1,33 @@
 {
+  "name": "my-backend",
+  "version": "1.0.0",
+  "description": "Backend for my application using Express",
+  "main": "server.js", // Your main entry point
+  "scripts": {
+    "start": "node server.js", // Command to start your server
+    "dev": "nodemon server.js", // Command for development (optional)
+    "build": "npm install" // Install dependencies
+  },
   "dependencies": {
-    "cors": "^2.8.5",
-    "crypto-js": "^4.2.0",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.1"
-  }
+    "cors": "^2.8.5", // Middleware for enabling CORS
+    "crypto-js": "^4.2.0", // Library for encryption and decryption
+    "dotenv": "^16.4.5", // Module to load environment variables from .env
+    "express": "^4.21.1" // Web framework for Node.js
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22" // Optional: Automatically restarts the server during development
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tyyab77/backend.git" // Update with your repository URL
+  },
+  "keywords": [
+    "node",
+    "express",
+    "backend",
+    "api"
+  ],
+  "author": "Your Name", // Add your name or the author's name
+  "license": "MIT" // Choose a license (or update as necessary)
 }
